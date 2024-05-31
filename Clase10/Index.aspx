@@ -9,7 +9,7 @@
     <link href="Style.css" rel="stylesheet" />
 </head>
 <body><div>
-            <h1>Hower Daniel Pozo Valdez</h1>
+            <h1>Hower Daniel Pozo Valdez aaa</h1>
             <img src="/IMG/ip.jpg" width="300" height="200"  alt="banner" />
             <h2>Ir a Pagina Web 1</h2>
         </div>
