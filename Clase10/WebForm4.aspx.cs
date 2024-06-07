@@ -13,5 +13,25 @@ namespace Clase10
         {
 
         }
+
+        protected void btnCalcular_Click(object sender, EventArgs e)
+        {
+            double nmro1 = double.Parse(numero1.Text);
+            double nmro2 = double.Parse(numero2.Text);
+
+            string operacion = milista.Value;
+            Double resultado = 0;
+
+
+
+        }
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            // Redireccionar a WebForm1.aspx
+            Response.Redirect("Index.aspx");
+        }
+
+
     }
+
 }
