@@ -46,10 +46,17 @@
 
             </div>
 
+            <div>
+
+    <h2>Ir a pagina Web 6 (mostrar variables)</h2>
+    </div>
+<div>
+    <asp:Button ID="Button7" runat="server" OnClick="Button7_Click" Text="Mostrar Variables" BackColor="orange" />
+
+</div>
+
 
               
-
-
         </form>
    
 </body>

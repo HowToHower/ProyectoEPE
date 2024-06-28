@@ -14,24 +14,55 @@ namespace Clase10
 
         }
 
-        protected void btnCalcular_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
-            double nmro1 = double.Parse(numero1.Text);
-            double nmro2 = double.Parse(numero2.Text);
-
-            string operacion = milista.Value;
-            Double resultado = 0;
-
-
-
-        }
-        protected void btnVolver_Click(object sender, EventArgs e)
-        {
-            // Redireccionar a WebForm1.aspx
             Response.Redirect("Index.aspx");
         }
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double num1 = Convert.ToDouble(TextBox1.Text);
 
+                double num2 = Convert.ToDouble(TextBox2.Text);
+
+                String operacion = combobox1.SelectedValue;
+                double resultado1 = 0;
+
+                switch (operacion)
+                {
+                    case "suma":
+                        resultado1 = num1 + num2;
+                        break;
+
+                    case "resta":
+                        resultado1 = num1 - num2;
+                        break;
+
+                    case "multiplicacion":
+                        resultado1 = num1 * num2;
+                        break;
+
+                    case "division":
+                        if (num2 != 0)
+                        {
+                            resultado1 = num1 / num2;
+                        }
+                        else
+                        {
+                            label2.Text = "Error: No se puede dividir por cero";
+                            return;
+                        }
+                        break;
+                }
+
+                label2.Text = resultado1.ToString();
+            }
+            catch (FormatException)
+            {
+                label2.Text = "Error: Opcion invalida";
+            }
+        }
     }
-
 }

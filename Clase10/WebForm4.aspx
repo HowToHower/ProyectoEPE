@@ -17,44 +17,37 @@
     <form id="form1" runat="server">
         <div>
         </div>
-       
-        Numero1                                                        
-        <asp:TextBox ID="numero1" runat="server"></asp:TextBox> 
+       <br />
         <div>
-        Numero2
-        <asp:TextBox ID="numero2" runat="server"></asp:TextBox>
+            <h4>Inserte un numero a calcular</h4>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox> 
         </div>
-
+        <br />
         <div>
-            <br />
-            <asp:Label ID="label1" runat="server" Text="Seleccione operacion"></asp:Label>
-            <asp:DropDownList ID="milista" runat="server">
-                
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        </div>
+        <br />
+        <div>
+            <h4>Seleccione una operacion</h4>
+            <asp:DropDownList ID="combobox1" runat="server">
                 <asp:ListItem Text="Suma" Value="suma"></asp:ListItem>
                 <asp:ListItem Text="Resta" Value="resta"></asp:ListItem>
-                <asp:ListItem Text="Multiplicacion" Value="multi"></asp:ListItem>
+                <asp:ListItem Text="Multiplicacion" Value="multiplicacion"></asp:ListItem>
                 <asp:ListItem Text="Division" Value="division"></asp:ListItem>
-
             </asp:DropDownList>
-            <asp:Label ID="label2" runat="server" Text="Oli c:"></asp:Label>
+            <asp:Label ID="label1" runat= "server" Text="Resultado:" ></asp:Label>
+            <asp:Label ID="label2" runat= "server"></asp:Label>
         </div>
-        
-
-         <div> </div>
         <br />
-            <asp:Label ID="labelresultado" runat="server" Text="a"></asp:Label>
+        <div>
+            <asp:Button ID="Button2" runat="server" Text="Calcular" OnClick="Button2_Click" BackColor="GreenYellow" />
+        </div>
         <br />
-         <div> </div>
+        <div>
+            <asp:Button ID="Button1" runat="server" Text="Volver al Index" OnClick="Button1_Click" BackColor="Red" />
+        </div>
         <br />
-        
-        <asp:Button ID="Buttondd1" runat="server" OnClick="btnCalcular_Click" Text="Calcular" BackColor="Green" />
-        <div></div>
-
-        <asp:Button ID="Buttondd2" runat="server" OnClick="btnVolver_Click" Text="Volver al Index" BackColor="Red" />
-
-
-          
-
+        <hr />
 
     </form>
 </body>
